@@ -1,17 +1,17 @@
 # -*- encoding: utf-8 -*-
 
 $LOAD_PATH.push File.expand_path('../lib', __FILE__)
-require 'pronto/poper/version'
+require 'pronto/poper2/version'
 require 'English'
 
 Gem::Specification.new do |s|
-  s.name = 'pronto-poper'
-  s.version = Pronto::PoperVersion::VERSION
+  s.name = 'pronto-poper2'
+  s.version = Pronto::Poper2Version::VERSION
   s.platform = Gem::Platform::RUBY
-  s.author = 'Mindaugas Mozūras'
-  s.email = 'mindaugas.mozuras@gmail.com'
-  s.homepage = 'http://github.com/mmozuras/pronto-poper'
-  s.summary = 'Pronto runner for Poper, git commit message analyzer'
+  s.author = 'Diego Bentes'
+  s.email = 'diegopbentes@gmail.com'
+  s.homepage = 'http://github.com/diegobentes/pronto-poper2'
+  s.summary = 'Pronto runner for Poper2, git commit message analyzer'
 
   s.licenses = ['MIT']
   s.required_ruby_version = '>= 2.3.0'
@@ -33,7 +33,7 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
 
   s.add_dependency('pronto', '~> 0.11.0')
-  s.add_dependency('poper', '~> 0.2.0')
+  s.add_dependency('poper2', '~> 0.3.3')
   s.add_development_dependency('rake', '~> 12.0')
   s.add_development_dependency('rspec', '~> 3.4')
   s.add_development_dependency('rspec-its', '~> 1.2')

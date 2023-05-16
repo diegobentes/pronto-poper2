@@ -1,14 +1,14 @@
 require 'pronto'
-require 'poper'
+require 'poper2'
 
 module Pronto
-  class Poper < Runner
+  class Poper2 < Runner
     def run
       return [] unless @patches
 
-      poper_runner = ::Poper::Runner.new(@commit, repo_path.to_s)
+      poper2_runner = ::Poper2::Runner.new(@commit, repo_path.to_s)
 
-      poper_runner.run
+      poper2_runner.run
         .select { |error| error.commit != @commit }
         .map { |error| message_for(error) }
     end

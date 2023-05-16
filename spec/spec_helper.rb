@@ -1,5 +1,5 @@
 require 'rspec'
-require 'pronto/poper'
+require 'pronto/poper2'
 
 RSpec.configure do |config|
   config.color_enabled = true
